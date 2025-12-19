@@ -50,8 +50,10 @@ if __name__ == "__main__":
     table.show()
     print("\nПоиск 'ложка':")
     found = table.find_by_name("ложка")
+    
     for item in found:
         print(f"  Найден: {item.name}")
+        
     print(f"\nОбщая стоимость: {table.total_cost()} руб.")
     print("\nУбираем нож:")
     table.remove_item("Нож")
